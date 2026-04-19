@@ -1,13 +1,13 @@
 :root {
-  --c-primary: #3a335c;
-  --c-soft: #f3cbdc;
-  --c-accent: #d183aa;
-  --c-mid: #71557b;
-  --c-dark: #4b1535;
-  --text-main: #251b2d;
-  --text-light: #fff8fb;
-  --glass: rgba(255, 255, 255, 0.45);
-  --shadow: 0 20px 40px rgba(75, 21, 53, 0.22);
+  --c-primary: #046307;
+  --c-soft: #f4fdff;
+  --c-accent: #b0e0e6;
+  --c-mid: #d7f2f7;
+  --c-dark: #034a06;
+  --text-main: #1d2c1f;
+  --text-light: #f8fffa;
+  --glass: rgba(244, 253, 255, 0.72);
+  --shadow: 0 20px 40px rgba(3, 74, 6, 0.2);
 }
 
 * {
@@ -23,9 +23,9 @@ body {
   font-family: "DM Sans", sans-serif;
   color: var(--text-main);
   background:
-    radial-gradient(circle at 20% 10%, rgba(243, 203, 220, 0.7), transparent 40%),
-    radial-gradient(circle at 80% 90%, rgba(113, 85, 123, 0.45), transparent 35%),
-    linear-gradient(140deg, #fff7fb 0%, #fdeef5 45%, #f7e2ed 100%);
+    radial-gradient(circle at 20% 10%, rgba(4, 99, 7, 0.2), transparent 40%),
+    radial-gradient(circle at 80% 90%, rgba(176, 224, 230, 0.3), transparent 35%),
+    linear-gradient(140deg, #f8fffa 0%, #eefbff 50%, #d7f2f7 100%);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -46,7 +46,7 @@ body {
 .bg-shape-1 {
   width: 270px;
   height: 270px;
-  background: var(--c-accent);
+  background: var(--c-primary);
   top: -50px;
   left: -70px;
   animation: drift 12s ease-in-out infinite;
@@ -55,7 +55,7 @@ body {
 .bg-shape-2 {
   width: 320px;
   height: 320px;
-  background: var(--c-mid);
+  background: var(--c-accent);
   right: -110px;
   top: 35%;
   animation: drift 14s ease-in-out infinite reverse;
@@ -64,7 +64,7 @@ body {
 .bg-shape-3 {
   width: 220px;
   height: 220px;
-  background: var(--c-soft);
+  background: var(--c-mid);
   left: 35%;
   bottom: -90px;
   animation: drift 10s ease-in-out infinite;
@@ -75,8 +75,8 @@ body {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(8px);
-  background: rgba(243, 203, 220, 0.5);
-  border-bottom: 1px solid rgba(58, 51, 92, 0.15);
+  background: rgba(244, 253, 255, 0.84);
+  border-bottom: 1px solid rgba(4, 99, 7, 0.22);
 }
 
 .nav-wrap {
@@ -126,7 +126,7 @@ main {
 .hero-card,
 .panel {
   background: var(--glass);
-  border: 1px solid rgba(58, 51, 92, 0.18);
+  border: 1px solid rgba(4, 99, 7, 0.2);
   border-radius: 20px;
   box-shadow: var(--shadow);
 }
@@ -139,7 +139,7 @@ main {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--c-mid);
+  color: var(--c-primary);
   margin: 0 0 0.7rem;
   font-size: 0.8rem;
 }
@@ -160,7 +160,7 @@ h1 {
 
 h2 {
   margin-bottom: 0.8rem;
-  color: var(--c-dark);
+  color: var(--c-primary);
   font-size: clamp(1.3rem, 3.3vw, 1.8rem);
 }
 
@@ -197,13 +197,13 @@ h3 {
 .btn.primary {
   background: linear-gradient(130deg, var(--c-primary), var(--c-dark));
   color: var(--text-light);
-  box-shadow: 0 12px 24px rgba(58, 51, 92, 0.28);
+  box-shadow: 0 12px 24px rgba(3, 74, 6, 0.32);
 }
 
 .btn.secondary {
-  background: #ffffffcc;
-  color: var(--c-primary);
-  border: 1px solid rgba(58, 51, 92, 0.26);
+  background: rgba(176, 224, 230, 0.2);
+  color: var(--c-dark);
+  border: 1px solid rgba(4, 99, 7, 0.25);
 }
 
 .hero-meta {
@@ -215,7 +215,7 @@ h3 {
 }
 
 .hero-meta a {
-  color: var(--c-dark);
+  color: var(--c-primary);
   font-weight: 700;
 }
 
@@ -247,15 +247,15 @@ h3 {
 .card,
 .project-card,
 .timeline-item {
-  background: rgba(255, 255, 255, 0.62);
-  border: 1px solid rgba(75, 21, 53, 0.15);
+  background: rgba(255, 253, 250, 0.78);
+  border: 1px solid rgba(4, 99, 7, 0.2);
   border-radius: 16px;
   padding: 1rem;
 }
 
 .project-card a,
 .clean-list a {
-  color: var(--c-dark);
+  color: var(--c-primary);
   font-weight: 700;
 }
 
@@ -266,8 +266,8 @@ h3 {
 }
 
 .chip {
-  background: linear-gradient(130deg, rgba(113, 85, 123, 0.18), rgba(209, 131, 170, 0.3));
-  border: 1px solid rgba(58, 51, 92, 0.2);
+  background: linear-gradient(130deg, rgba(176, 224, 230, 0.45), rgba(4, 99, 7, 0.12));
+  border: 1px solid rgba(4, 99, 7, 0.24);
   color: var(--c-primary);
   padding: 0.45rem 0.72rem;
   border-radius: 999px;
